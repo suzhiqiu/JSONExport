@@ -99,6 +99,9 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate, NSTabl
         loadLastSelectedLanguage()
         updateUIFieldsForSelectedLanguage()
 		self.tableView.backgroundColor = .clear
+    
+        self.generateConstructors.state = NSControl.StateValue.off
+        self.generateUtilityMethods.state = NSControl.StateValue.off
     }
     
     /**
